@@ -1,0 +1,13 @@
+Imgsize: full
+
+----
+
+Textcolor: white
+
+----
+
+Project: inventory/crossbenching
+
+----
+
+Sort: 7

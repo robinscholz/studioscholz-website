@@ -1,0 +1,17 @@
+Title: Studio Scholz
+
+----
+
+Author: Robin Scholz
+
+----
+
+Description: Studio Scholz is the online and offline practice of graphic designer Robin Scholz. After graduating from the Gerrit Rietveld Academie in Amsterdam and working at Zak Group in London, he is currently living and working in Munich, Germany.
+
+----
+
+Keywords: 
+
+----
+
+Copyright: © 2009-(date: Year) (link: http://studioscholz.info text: Studio Scholz)

@@ -1,0 +1,13 @@
+title: Home
+pages: false
+fields:
+  title:
+    label: Title
+    type:  text
+    readonly: true
+options: 
+  delete: false
+  preview: false
+  url: false
+  status: false
+hide: true

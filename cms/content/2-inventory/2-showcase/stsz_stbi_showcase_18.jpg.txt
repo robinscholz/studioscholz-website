@@ -1,0 +1,5 @@
+Imgsize: large
+
+----
+
+Textcolor: black

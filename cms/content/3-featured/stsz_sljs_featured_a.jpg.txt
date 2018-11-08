@@ -1,0 +1,13 @@
+Imgsize: full
+
+----
+
+Textcolor: white
+
+----
+
+Project: inventory/simon-skatka-lindell
+
+----
+
+Sort: 1

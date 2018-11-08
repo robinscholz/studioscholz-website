@@ -1,0 +1,60 @@
+title: Studio
+pages: false
+files:
+  fields:
+    caption:
+      label: Caption
+      type: textarea
+fields:
+  title:
+    label: Title
+    type:  text
+  intro:
+    label: Intro
+    type: structure
+    style: table
+    fields:
+      adddate:
+        label: Date
+        type: date
+      textentry:
+        label: Entry
+        type: text
+      htmlcolor:
+        type: select
+        options: url
+        url: assets/colors/colors.json
+  city:
+    label: Current city
+    type: text
+    width: 1/2
+  timezone:
+    label: Timezone
+    type: select
+    options: url
+    url: assets/timezones/timezones.json
+    width: 1/2
+  about:
+    label: Info
+    type: textarea
+  aboutimg:
+    label: Featured Image
+    type: image
+  email:
+    label: e-Mail
+    type: email
+    width: 1/2
+  phone:
+    label: Phone
+    type: tel
+    width: 1/2
+  imprint:
+    label: Imprint
+    type: textarea
+options: 
+  delete: false
+  preview: false
+  url: false
+  status: false
+
+

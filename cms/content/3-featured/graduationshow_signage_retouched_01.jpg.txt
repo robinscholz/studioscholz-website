@@ -1,0 +1,13 @@
+Imgsize: full
+
+----
+
+Textcolor: black
+
+----
+
+Project: inventory/graduation-show
+
+----
+
+Sort: 5

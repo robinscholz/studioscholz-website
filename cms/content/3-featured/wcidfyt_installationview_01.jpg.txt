@@ -1,0 +1,13 @@
+Imgsize: full
+
+----
+
+Textcolor: black
+
+----
+
+Project: inventory/what-can-i-do-for-you-today
+
+----
+
+Sort: 8

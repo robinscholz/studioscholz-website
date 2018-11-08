@@ -1,0 +1,13 @@
+Imgsize: full
+
+----
+
+Textcolor: white
+
+----
+
+Project: inventory/martin-van-zomeren
+
+----
+
+Sort: 10

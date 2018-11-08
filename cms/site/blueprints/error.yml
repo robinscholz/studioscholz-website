@@ -1,0 +1,8 @@
+title: Error
+pages: false
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+hide: true

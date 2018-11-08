@@ -1,0 +1,13 @@
+Imgsize: full
+
+----
+
+Textcolor: white
+
+----
+
+Project: inventory/invisible-adversaries
+
+----
+
+Sort: 12
