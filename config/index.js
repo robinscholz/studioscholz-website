@@ -30,7 +30,7 @@ module.exports = {
     proxyTable: {
       // proxy all requests starting with /cms/api to json
       '/cms/api/data': {
-        target: 'http://46.101.213.207/cms/api/data',
+        target: 'https://studioscholz.info/cms/api/data',
         changeOrigin: true,
         pathRewrite: {
           '^/cms/api/data': ''
