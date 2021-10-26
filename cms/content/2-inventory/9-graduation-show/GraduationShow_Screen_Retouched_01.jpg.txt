@@ -1,9 +1,0 @@
-Sort: 11
-
-----
-
-Imgsize: full
-
-----
-
-Textcolor: white
