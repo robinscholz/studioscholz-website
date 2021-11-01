@@ -12,24 +12,48 @@ const headerStyles = css({
   display: 'flex',
   alignItems: 'center',
   position: 'relative',
+  variants: {
+    direction: {
+      row: {
+        flexDirection: 'row'
+      },
+      col: {
+        flexDirection: 'column'
+      }
+    }
+  }
 })
 
 const switchStyles = css({
-  position: 'fixed',
-  top: 12,
-  right: 12,
   variants: {
-    colors: {
-      red: {
+    position: {
+      fixed: {
+        position: 'fixed',
+        top: 12,
+        right: 12,
+      },
+      inline: {
         position: 'relative',
-        marginLeft: 'auto'
+        marginLeft: 'auto',
+        top: 0,
+        left: 0
       }
     }
   }
 })
 
 const titleStyles = css({
-   marginLeft: 12,
+   variants: {
+    direction: {
+      col: {
+        marginTop: 4
+      },
+      row: {
+        marginLeft: 12,
+        marginTop: 0,
+      }
+    }
+   }
 })
 
 const darkModeCallback = (checked) => {
@@ -42,19 +66,21 @@ const darkModeCallback = (checked) => {
 
 class Header extends React.Component {
   render() {
-    return <header className={headerStyles()}>
+    return <header className={headerStyles({ direction: { '@initial': 'col', '@sm': 'row' }})}>
       <Avatar 
         src='images/stsz_avatar.jpg'
         alt="Studio Scholz mascot" 
       />
-      <h1 className={titleStyles()}>{this.props.title}</h1>
+      <h1 className={titleStyles({ direction: { '@initial': 'col', '@sm': 'row' }})}>
+        {this.props.title}
+      </h1>
       <Switch 
         name="dark-mode"
         id="dark-mode" 
         label="Lights?"
         defaultChecked
         callback={darkModeCallback} 
-        className={switchStyles({ '@sm:colors': 'red' })}
+        className={switchStyles({ position: { '@initial': 'fixed', '@sm': 'inline' }})}
       />
     </header>
   }
