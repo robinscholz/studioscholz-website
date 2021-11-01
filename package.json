@@ -9,6 +9,14 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/renderer-react": "^0.2.2",
+    "@stitches/astro": "https://pkg.csb.dev/modulz/stitches/commit/86f7072f/@stitches/astro",
     "astro": "^0.20.12"
+  },
+  "dependencies": {
+    "@radix-ui/colors": "^0.1.7",
+    "@radix-ui/react-avatar": "^0.1.1",
+    "@radix-ui/react-label": "^0.1.1",
+    "@radix-ui/react-switch": "^0.1.1"
   }
 }

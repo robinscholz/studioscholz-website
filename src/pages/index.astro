@@ -1,6 +1,10 @@
 ---
-import Default from '../layouts/default.astro'
+import Default from '$/layouts/default.astro'
+import { Markdown } from 'astro/components';
+
+const content = Astro.fetchContent('../content/index.md');
+
 ---
 <Default title="Studio Scholz">
-  <h1>Hello, world!</h1>
+  <Markdown content={content[0].astro.source} />
 </Default>

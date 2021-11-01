@@ -1,5 +1,7 @@
 ---
 const { title } = Astro.props
+import Header from '../components/Header.jsx'
+import { Sheet } from '$/stitches.config.ts'
 ---
 
 <html lang="en">
@@ -8,10 +10,22 @@ const { title } = Astro.props
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="{Astro.resolve('../styles/global.css')}">
-
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <Header title="Studio Scholz" client:load />
+    <div class="content">
+      <slot />
+    </div>  
+    <Sheet />
   </body>
 </html>
+
+
+<style>
+.content {
+  padding: 0 var(--spacing-3);
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+</style>
