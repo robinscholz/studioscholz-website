@@ -1,7 +1,6 @@
 import React from 'react'
-import Switch from '../components/Switch.jsx'
-import Avatar from '../components/Avatar.jsx'
-
+import Switch from '@/components/Switch.jsx'
+import Avatar from '@/components/Avatar.jsx'
 
 import { css } from '$/stitches.config.ts';
 

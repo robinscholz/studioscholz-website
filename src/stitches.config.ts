@@ -1,6 +1,6 @@
-import { createStitches } from '@stitches/astro';
+import { createStitches } from '@stitches/core'
 
-export const { Sheet, css } = createStitches({
+export const { css, getCssText } = createStitches({
 	media: {
     sm: '(min-width: 640px)',
     lg: '(min-width: 1024px)',
@@ -15,7 +15,6 @@ export const { Sheet, css } = createStitches({
 			10: '2.5rem'
     },
     fontSizes: {
-      1: '12px',
       2: '13px',
       3: '15px',
     },

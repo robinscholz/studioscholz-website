@@ -1,7 +1,9 @@
 ---
+import Header from '@/components/Header.jsx'
+import { css, getCssText } from '$/stitches.config.ts'
+
+
 const { title } = Astro.props
-import Header from '../components/Header.jsx'
-import { Sheet, css } from '$/stitches.config.ts'
 
 const contentStyles = css({
   padding: '0 $6',
@@ -24,18 +26,35 @@ const footerStyles = css({
     <meta charset="utf-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="{Astro.resolve('../styles/index.css')}">
+    <link rel="stylesheet" href={Astro.resolve('../styles/index.css')}>
     <title>{title}</title>
+    <script></script>
   </head>
   <body class="dark-theme">
     <Header title="Studio Scholz" client:load />
     <div class={`${contentStyles()} content`}>
       <slot />
     </div>  
-    <Sheet />
-    <footer class={footerStyles()}>
+    <!-- <Sheet /> -->
+    <footer class={`${footerStyles()} footer`}>
       <span>Last edited 11/2/2021</span>
       <p>Studio Scholz, Idastr. 13, 81479 Munich</p>
     </footer>
   </body>
 </html>
+
+<style>
+.content {
+  padding: 0 var(--spacing-6);
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.footer {
+  margin: auto auto 0 auto;
+  padding: var(--spacing-6);
+  font-size: var(--text-sm);
+  width: 100%;
+  max-width: var(--content-width);
+}
+  </style>

@@ -1,3 +1,8 @@
+@import "@radix-ui/colors/slateDark.css";
+@import "@radix-ui/colors/slate.css";
+@import "@radix-ui/colors/indigoDark.css";
+@import "@radix-ui/colors/indigo.css";
+
 html {
   font-size: 16px;
 }
