@@ -1,13 +1,15 @@
 html:root {
   --text-sm: 12px;
-  --text-base: 18px;
+  --text-base: 17px;
   --text-lg: 24px;
   --text-xl: 32px;
   --leading-base: 1.5;
   --leading-head: 1.25;
   --font-bold: 600;
-  --content-width: 48.5rem;
+  --content-width: 50rem;
   --spacing-2: 0.5rem;
   --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
   --transparent: transparent;
 }

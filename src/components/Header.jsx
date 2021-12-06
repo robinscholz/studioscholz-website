@@ -7,8 +7,9 @@ import { css } from '$/stitches.config.ts';
 
 const headerStyles = css({
   maxWidth: 'var(--content-width)',
-  margin: '0 auto 40px auto',
-  padding: '40px var(--spacing-3) 0 var(--spacing-3)',
+  width: '100%',
+  margin: '0 auto $10 auto',
+  padding: '$10 $3 0 $3',
   display: 'flex',
   alignItems: 'center',
   position: 'relative',
@@ -32,12 +33,12 @@ const switchStyles = css({
         top: 12,
         right: 12,
       },
-      inline: {
-        position: 'relative',
-        marginLeft: 'auto',
-        top: 0,
-        left: 0
-      }
+      // inline: {
+      //   position: 'relative',
+      //   marginLeft: 'auto',
+      //   top: 0,
+      //   left: 0
+      // }
     }
   }
 })
@@ -51,6 +52,14 @@ const titleStyles = css({
       row: {
         marginLeft: 12,
         marginTop: 0,
+      }
+    },
+    size: {
+      small: {
+        fontSize: 'var(--text-lg)'
+      },
+      large: {
+        fontSize: 'var(--text-xl)'
       }
     }
    }
@@ -71,16 +80,23 @@ class Header extends React.Component {
         src='images/stsz_avatar.jpg'
         alt="Studio Scholz mascot" 
       />
-      <h1 className={titleStyles({ direction: { '@initial': 'col', '@sm': 'row' }})}>
+      <h1 
+        className={
+          titleStyles(
+            { direction: { '@initial': 'col', '@sm': 'row' }},
+            { size: { '@initial': 'small', '@sm': 'large' }}
+          )
+        }
+      >
         {this.props.title}
       </h1>
       <Switch 
         name="dark-mode"
         id="dark-mode" 
-        label="Lights?"
-        defaultChecked
+        label="Light?"
+        defaultChecked={false}
         callback={darkModeCallback} 
-        className={switchStyles({ position: { '@initial': 'fixed', '@sm': 'inline' }})}
+        className={switchStyles({ position: 'fixed' })}
       />
     </header>
   }
