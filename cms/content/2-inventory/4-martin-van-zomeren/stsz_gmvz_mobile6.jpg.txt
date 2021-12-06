@@ -1,9 +1,0 @@
-Imgsize: large
-
-----
-
-Textcolor: black
-
-----
-
-Sort: 19

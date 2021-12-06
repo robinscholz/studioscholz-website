@@ -1,9 +1,0 @@
-Sort: 2
-
-----
-
-Imgsize: contained
-
-----
-
-Textcolor: black

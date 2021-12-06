@@ -1,5 +1,0 @@
-Title: Inventory
-
-----
-
-Searchfilter: Identity,Installation,Publication,Website

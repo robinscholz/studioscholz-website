@@ -1,5 +1,0 @@
-Imgsize: full
-
-----
-
-Textcolor: black

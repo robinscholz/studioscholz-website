@@ -1,5 +1,0 @@
-Imgsize: contained
-
-----
-
-Textcolor: black
