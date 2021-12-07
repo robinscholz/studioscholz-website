@@ -28,7 +28,7 @@ const switchStyles = css({
   variants: {
     position: {
       fixed: {
-        position: 'fixed',
+        position: 'absolute',
         top: 12,
         right: 12,
       },
