@@ -11,7 +11,6 @@ const headerStyles = css({
   padding: '$10 $3 0 $3',
   display: 'flex',
   alignItems: 'center',
-  position: 'relative',
   variants: {
     direction: {
       row: {
@@ -27,8 +26,8 @@ const headerStyles = css({
 const switchStyles = css({
   variants: {
     position: {
-      fixed: {
-        position: 'fixed',
+      absolute: {
+        position: 'absolute',
         top: 12,
         right: 12,
       },
@@ -95,7 +94,7 @@ class Header extends React.Component {
         label="Light?"
         defaultChecked={false}
         callback={darkModeCallback} 
-        className={switchStyles({ position: 'fixed' })}
+        className={switchStyles({ position: 'absolute' })}
       />
     </header>
   }
