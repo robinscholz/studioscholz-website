@@ -24,9 +24,9 @@ const footerStyles = css({
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href={Astro.resolve('../styles/index.css')}>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href={Astro.resolve('../styles/index.css')}>
     <title>{title}</title>
     <script></script>
   </head>
@@ -37,7 +37,7 @@ const footerStyles = css({
     </div>  
     <!-- <Sheet /> -->
     <footer class={`${footerStyles()} footer`}>
-      <span>Last edited 12/6/2021</span>
+      <span>Last edited 12/7/2021</span>
       <p>Robin Scholz, Idastr. 13, 81479 Munich</p>
     </footer>
   </body>
